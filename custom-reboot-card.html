@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Reboot Card - Reboot Cards</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="assets/StripeKlayCard.png" type="image/png" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Reboot Cards</a>
+      <ul class="nav-links">
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="product-detail-container">
+    <div class="product-image">
+      <img src="assets/Fortnite Reboot Card IRL.jpg" alt="Reboot Card">
+    </div>
+    <div class="product-info">
+      <h1>Custom Reboot Card | $8.99</h1>
+      <p class="description">
+        This high-quality reboot card is inspired by the iconic battle royale video game. Professionally printed on thick PVC plastic. Durable, wallet-sized, and double-sided. A perfect collectible or gift for fans.
+      </p>
+      <!--
+      <label for="version-select">Choose a version:</label>
+      <select id="version-select" onchange="updateLink(this, 'buy-link')">
+        <option value="https://buy.stripe.com/test1a">Version 1</option>
+        <option value="https://buy.stripe.com/test1b">Version 2</option>
+        <option value="https://buy.stripe.com/test1c">Version 3</option>
+        <option value="https://buy.stripe.com/test1d">Version 4</option>
+      </select>
+-->
+      <a href="https://buy.stripe.com/7sYaEWaBv6Ar1xWcoK2880Z" id="buy-link" class="btn" target="_blank">Buy Now</a>
+    </div>
+  </main>
+
+  <script>
+    function updateLink(select, btnId) {
+      document.getElementById(btnId).href = select.value;
+    }
+  </script>
+</body>
+</html>
