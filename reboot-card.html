@@ -6,6 +6,26 @@
   <title>Reboot Card - Reboot Cards</title>
   <link rel="stylesheet" href="styles.css"/>
   <link rel="icon" href="assets/StripeKlayCard.png" type="image/png" />
+
+    <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src='https://connect.facebook.net/en_US/fbevents.js';
+  s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script');
+
+  fbq('init', '699463739756214');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=699463739756214&ev=PageView&noscript=1"/>
+</noscript>
+  
 </head>
 <body>
   <nav class="navbar">
@@ -40,6 +60,24 @@
       <a href="https://buy.stripe.com/cNifZg4d79MDgsQ0G22880Y" id="buy-link" class="btn" target="_blank">Buy Now</a>
     </div>
   </main>
+
+
+  <script>
+  function updateLink(select, btnId) {
+    document.getElementById(btnId).href = select.value;
+  }
+
+  // Track AddToCart when Buy Now is clicked
+  document.getElementById('buy-link').addEventListener('click', function () {
+    fbq('track', 'AddToCart', {
+      content_name: 'Reboot Card',
+      content_ids: ['reboot_card'],
+      content_type: 'product',
+      value: 7.99,
+      currency: 'USD'
+    });
+  });
+</script>
 
   <script>
     function updateLink(select, btnId) {
