@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Squad Pack Custom Reboot Cards - Reboot Cards</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="assets/StripeKlayCard.png" type="image/png" />
+
+  <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src='https://connect.facebook.net/en_US/fbevents.js';
+  s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script');
+
+  fbq('init', '699463739756214');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=699463739756214&ev=PageView&noscript=1"/>
+</noscript>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Reboot Cards</a>
+      <ul class="nav-links">
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="product-detail-container">
+    <div class="product-image">
+      <img src="assets/real fortnite reboot cards squad pack.jpg" alt="Reboot Card">
+    </div>
+    <div class="product-info">
+      <h1>Squad Pack Custom Reboot Cards | $32.99</h1>
+      <p class="description">
+        These high-quality reboot cards are inspired by the iconic battle royale video game. Professionally printed on thick PVC plastic. Durable, wallet-sized, and double-sided. A perfect collectible or gift for fans.
+      </p>
+      <!--
+      <label for="version-select">Choose a version:</label>
+      <select id="version-select" onchange="updateLink(this, 'buy-link')">
+        <option value="https://buy.stripe.com/test1a">Version 1</option>
+        <option value="https://buy.stripe.com/test1b">Version 2</option>
+        <option value="https://buy.stripe.com/test1c">Version 3</option>
+        <option value="https://buy.stripe.com/test1d">Version 4</option>
+      </select>
+-->
+      <a href="https://buy.stripe.com/aFa4gy9xraQHb8wfAW28811" id="buy-link" class="btn" target="_blank">Customize Now</a>
+    </div>
+  </main>
+
+  <script>
+  function updateLink(select, btnId) {
+    document.getElementById(btnId).href = select.value;
+  }
+
+  // Track AddToCart when Buy Now is clicked
+  document.getElementById('buy-link').addEventListener('click', function () {
+    fbq('track', 'AddToCart', {
+      content_name: 'Custom Reboot Card',
+      content_ids: ['squad_pack_reboot_cards_custom'],
+      content_type: 'product',
+      value: 32.99,
+      currency: 'USD'
+    });
+  });
+</script>
+
+  <script>
+    function updateLink(select, btnId) {
+      document.getElementById(btnId).href = select.value;
+    }
+  </script>
+</body>
+</html>

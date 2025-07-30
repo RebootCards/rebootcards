@@ -78,8 +78,15 @@ body {
 }
 
 .product-card h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   color: white;
+  font-size: 1.25rem;
+}
+
+.product-card .price {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin: 0;
 }
 
 .btn {
@@ -241,5 +248,10 @@ a:visited {
 
   .hero-video video {
     max-height: 400px;
+  }
+
+
+  .product-card h2 {
+    font-size: 1rem;
   }
 }
