@@ -254,4 +254,7 @@ a:visited {
   .product-card h2 {
     font-size: 1rem;
   }
+  .product-grid {
+  grid-template-columns: 1fr;
+}
 }
